@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Romantic Words for Hasna ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe0f7, #ffd1dc);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+      position: relative;
+    }
+    h1 {
+      text-align: center;
+      color: #ff6f91;
+      margin: 20px;
+      font-size: 2rem;
+    }
+    .main-line {
+      text-align: center;
+      font-size: 1.7rem;
+      color: #ff4d6d;
+      margin: 20px 10px;
+      padding: 10px;
+      line-height: 1.4;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .scroll-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+    .scroll-box {
+      width: 300px;
+      max-height: 300px;
+      overflow-y: auto;
+      background: rgba(255,255,255,0.8);
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      flex: 1 1 300px;
+    }
+    .line {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: #444;
+    }
+    button {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 25px;
+      background-color: #ff6f91;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      z-index: 1;
+    }
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #ff6f91;
+    }
+    .heart, .kiss {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      animation: floatUp 6s linear infinite;
+      z-index: 0;
+    }
+    .heart {
+      background: url('https://pngimg.com/uploads/heart/heart_PNG51337.png') no-repeat center/contain;
+    }
+    .kiss {
+      background: url('https://em-content.zobj.net/source/telegram/358/kiss-mark_1f48b.png') no-repeat center/contain;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+    }
+    @media (max-width: 768px) {
+      .scroll-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .scroll-box {
+        width: 90%;
+        max-height: 200px;
+      }
+      .main-line {
+        font-size: 1.3rem;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Romantic Lines & Mini Poems for Hasna 💖</h1>
+
+  <div class="main-line">
+     There’s so much I want to tell you, Hasna...  
+  I try, but words always fall short.  
+  I just wish you could feel what’s inside me—  
+  How deeply, how endlessly, I love you.💫💞
+  </div>
+
+  <div class="scroll-container">
+    <div class="scroll-box">
+      <div class="line">You’re not just beautiful — you’re everything my soul ever prayed for.</div>
+      <div class="line">Your laughter feels like home. Every time you smile, my world becomes poetry.</div>
+      <div class="line">When I look at you, I see peace, passion, and the love I’ve been waiting for.</div>
+      <div class="line">You're not in my life by chance, you're in it because my heart called for you.</div>
+      <div class="line">You didn’t just steal my heart, you built a palace in it—and stayed.</div>
+      <div class="line">In a sky full of stars, I’d still find you with my eyes closed.</div>
+      <div class="line">You talk, and the world fades. Only your voice matters.</div>
+      <div class="line">One glance from you, and the chaos in me quiets.</div>
+      <div class="line">You're the chapter I never want to end.</div>
+      <div class="line">Your presence is a love song only my heart knows how to play.</div>
+    </div>
+
+    <div class="scroll-box">
+      <div class="line">You're not just a dream, you're the reason I don’t want to wake up.</div>
+      <div class="line">If I could pause time, it would be the moment you looked at me.</div>
+      <div class="line">There’s something about you — a warmth that makes forever sound easy.</div>
+      <div class="line">Even the moon must feel jealous. You glow better than the night ever could.</div>
+      <div class="line">Falling for you wasn't a choice, it was destiny disguised as a smile.</div>
+      <div class="line">كلّ مرّة أنظر إليك، أشكر الله أنه كتبك لي.</div>
+      <div class="line">أنتِ دعاء جميل استجاب الله له بهدوء.</div>
+      <div class="line">في حضورك، يطمئن قلبي وكأنك راحتي من كل شيء.</div>
+      <div class="line">You're not a part of my story… you're the whole book.</div>
+      <div class="line">Every day with you is poetry I never have to write.</div>
+    </div>
+  </div>
+
+  <button onclick="location.href='index.html'">⬅️ Back to Main Page</button>
+
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function createHeartOrKiss() {
+      const element = document.createElement('div');
+      if (Math.random() < 0.7) {
+        element.classList.add('heart');
+      } else {
+        element.classList.add('kiss');
+      }
+      element.style.left = Math.random() * 100 + "vw";
+      document.body.appendChild(element);
+      setTimeout(() => element.remove(), 6000);
+    }
+    setInterval(createHeartOrKiss, 150);
+  </script>
+</body>
+</html>
